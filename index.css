@@ -1,0 +1,43 @@
+
+.ligne_titre{
+    margin-bottom: 80px;
+}
+
+.ligne_td{
+    margin-bottom: 50px;
+}
+
+.ligne_de{
+    margin-bottom: 50px;
+}
+
+body {
+  overflow: auto;
+}
+
+.perso_titre{
+    margin-top: 50px;
+}
+
+
+.color{
+    background-color: black;
+    border: black;
+}
+
+.color:hover{
+    background-color: white;
+    color:black
+}
+
+.profile_photo{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.dropdown-item:active{
+    background-color: black ;
+}
+
+
