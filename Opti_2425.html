@@ -1,4 +1,4 @@
- <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css">
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
 
@@ -54,12 +54,16 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="grid text-center" style="--bs-columns: 1;">
-        <div>Optimisation 2024-2025</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Opti_2425.html">Optimisation 2024-2025</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    </div>
-
-     <hr class="ligne_titre">
+        </div>
+    </nav>
 
     <div class="grid text-center" style="--bs-columns: 1;">
         <div>TD</div>
@@ -68,59 +72,103 @@
 
     <hr class="ligne_td">
 
-    <div class="row">
+    <div class="row justify-content-center g-3">
 
-        <div class="col-sm-3 ">
+        <div class="col-auto ">
 
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L1</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+
+
+
+                    <!-- Bouton correction -->
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tdl1" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="tdl1">
+                        <div class="card card-body">
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L2</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+
+                    <!-- correction -->
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tdl2" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="tdl2">
+                        <div class="card card-body">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L3</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+
+                    <!-- Correction -->
+
+
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="tdl3" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="tdl3">
+                        <div class="card card-body">
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">M1</h5>
                     <p class="card-text">
                         <a href="/tdoptimisationannee20242025/TD1-3.pdf" target="_blank" class="pdf-button">TD 1</a>
@@ -132,13 +180,28 @@
                         <a href="/tdoptimisationannee20242025/TD7.pdf" target="_blank" class="pdf-button">TD 7</a>
                         <a href="/tdoptimisationannee20242025/TD8-1.pdf" target="_blank" class="pdf-button">TD 8</a>
                     </p>
-                    <a href="/tdoptimisationannee20242025/correctionexo3TD8.pdf" class="btn btn-primary color">Correction</a>
+                    <!-- correction -->
+
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tdm1" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="tdm1">
+                        <div class="card card-body">
+                            <a href="/tdoptimisationannee20242025/correctionexo3TD8.pdf" target="_blank"
+                                class="pdf-button">Correction_td8_exo3</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
 
-
+        <!-- ----------------------section devoir maison et examen--------------------------------- -->
 
 
         <div class="grid text-center perso_titre" style="--bs-columns: 1;">
@@ -146,63 +209,115 @@
 
         </div>
 
-         <hr class="ligne_de">
+        <hr class="ligne_de">
 
 
-        <div class="col-sm-3 ">
+        <div class="col-auto ">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L1</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+
+                    <!-- correction -->
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#devl1" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="devl1">
+                        <div class="card card-body">
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L2</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#devl2" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="devl2">
+                        <div class="card card-body">
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">L3</h5>
                     <p class="card-text">En maintenance</p>
-                    <a href="#" class="btn btn-primary color">Correction</a>
+
+                    <!-- correction -->
+
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#devl3" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="devl3">
+                        <div class="card card-body">
+                           
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-auto">
 
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card h-100 d-flex flex-column taille-card">
+                <img src="Ballons-de-couleur-noire.jpg" class="card-img-top" alt="...">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">M1</h5>
                     <p class="card-text">
                         <a href="/tdoptimisationannee20242025/devoir2OP2024.pdf" target="_blank"
                             class="pdf-button">DM2</a>
                     </p>
-                    <a href="/tdoptimisationannee20242025/correctionDM2.pdf" class="btn btn-primary color">Correction</a>
+                    <!-- bouton correction -->
+                    <p class="d-inline-flex gap-1">
+
+                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#devm1" aria-expanded="false" aria-controls="collapseExample">
+                            Correction
+                        </button>
+                    </p>
+                    <div class="collapse" id="devm1">
+                        <div class="card card-body">
+                            <a href="/tdoptimisationannee20242025/correctionDM2.pdf" target="_blank"
+                                class="pdf-button">Correction_DM2</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -212,6 +327,8 @@
 
 
     </div>
+
+</br>
 
 
 </body>

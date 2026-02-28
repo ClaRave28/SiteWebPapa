@@ -40,4 +40,11 @@ body {
     background-color: black ;
 }
 
+/* taille des cards */
+.taille-card {
+    width: 260px;
+    margin: auto;
+    
+}
+
 
