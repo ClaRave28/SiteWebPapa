@@ -1,55 +1,28 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.css.map">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap.rtl.css">
-    <link rel="stylesheet" href="css/bootstrap.rtl.css.map">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-grid.css.map">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-grid.rtl.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.rtl.css.map">
-    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css.map">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.css.map">
-    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-utilities.css">
-    <link rel="stylesheet" href="css/bootstrap-utilities.css.map">
-    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
-    <link rel="stylesheet" href="css/bootstrap-utilities.min.css.map">
-    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.css">
-    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.css.map">
-    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css">
-    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.min.css.map">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="palette.css">
     <link rel="stylesheet" href="index.css">
 
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <title>Pierre Del Castillo</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- navbar -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -106,6 +79,121 @@
             </div>
         </div>
     </nav>
+
+    <!-- <div class="d-flex align-items-center justify-content-center p-3 ps-5 mt-5"> -->
+    <div class="d-flex align-items-center justify-content-center p-3 mt-5" style="min-height: 70vh;">
+
+
+        <div class="hero-details">
+            <h2 class="title">Bienvenue !</h2>
+            <h3 class="subtitle">Un espace pour les mathématiques</h3>
+            <p class="description">Vous y trouverez
+                mes ressources pédagogiques.</p>
+        </div>
+
+        <!-- Carousel à droite -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="300" height="300">
+                <defs>
+                    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffccd5" />
+                        <stop offset="100%" stop-color="#fff0f3" />
+                    </radialGradient>
+
+                    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#590d22" />
+                        <stop offset="100%" stop-color="#a4133c" />
+                    </linearGradient>
+
+                    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#fff0f3" />
+                        <stop offset="100%" stop-color="#ffccd5" />
+                    </linearGradient>
+
+                    <filter id="shadow">
+                        <feDropShadow dx="3" dy="4" stdDeviation="5" flood-color="#590d22" flood-opacity="0.2" />
+                    </filter>
+
+                    <filter id="softShadow">
+                        <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#800f2f" flood-opacity="0.15" />
+                    </filter>
+                </defs>
+
+                <!-- Fond circulaire -->
+                <circle cx="200" cy="200" r="195" fill="url(#bgGrad)" stroke="#ffb3c1" stroke-width="1.5" />
+                <circle cx="200" cy="200" r="170" fill="none" stroke="#ffccd5" stroke-width="1" stroke-dasharray="4 5"
+                    opacity="0.7" />
+
+                <!-- === LIVRE OUVERT === -->
+                <!-- Couverture gauche -->
+                <path d="M 90 130 Q 85 270 95 290 L 200 280 L 200 120 Q 150 115 90 130 Z" fill="url(#bookGrad)"
+                    filter="url(#shadow)" />
+
+                <!-- Couverture droite -->
+                <path d="M 310 130 Q 315 270 305 290 L 200 280 L 200 120 Q 250 115 310 130 Z" fill="#800f2f"
+                    filter="url(#shadow)" />
+
+                <!-- Page gauche -->
+                <path d="M 100 136 Q 97 268 106 284 L 200 275 L 200 126 Q 155 121 100 136 Z" fill="url(#pageGrad)"
+                    filter="url(#softShadow)" />
+
+                <!-- Page droite -->
+                <path d="M 300 136 Q 303 268 294 284 L 200 275 L 200 126 Q 245 121 300 136 Z" fill="url(#pageGrad)"
+                    filter="url(#softShadow)" />
+
+                <!-- Reliure centrale -->
+                <path d="M 200 120 Q 196 200 200 280" stroke="#590d22" stroke-width="3" fill="none" opacity="0.6" />
+
+                <!-- Symboles mathématiques — page gauche -->
+                <!-- Intégrale (grand, centré) -->
+                <text x="133" y="225" font-family="Georgia, serif" font-size="85" text-anchor="middle" fill="#c9184a"
+                    opacity="0.8">∫</text>
+                <!-- Sigma haut gauche -->
+                <text x="116" y="162" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#800f2f"
+                    opacity="0.8">Σ</text>
+                <!-- Pi haut droite -->
+                <text x="172" y="158" font-family="Georgia, serif" font-size="20" text-anchor="middle" fill="#a4133c"
+                    opacity="0.8">π</text>
+                <!-- Delta bas gauche -->
+                <text x="115" y="262" font-family="Georgia, serif" font-size="20" text-anchor="middle" fill="#800f2f"
+                    opacity="0.75">Δ</text>
+                <!-- Infini bas droite -->
+                <text x="170" y="262" font-family="Georgia, serif" font-size="17" text-anchor="middle" fill="#a4133c"
+                    opacity="0.75">∞</text>
+                <!-- Racine carrée milieu -->
+                <text x="174" y="210" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#800f2f"
+                    opacity="0.7">√</text>
+
+                <!-- Lignes de texte — page droite -->
+                <line x1="210" y1="158" x2="282" y2="160" stroke="#ffb3c1" stroke-width="2" stroke-linecap="round" />
+                <line x1="212" y1="173" x2="285" y2="175" stroke="#ffb3c1" stroke-width="2" stroke-linecap="round" />
+                <line x1="211" y1="188" x2="286" y2="190" stroke="#ffb3c1" stroke-width="2" stroke-linecap="round" />
+                <line x1="212" y1="203" x2="287" y2="205" stroke="#ffb3c1" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="213" y1="218" x2="287" y2="220" stroke="#ffb3c1" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="214" y1="233" x2="287" y2="235" stroke="#ffb3c1" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="214" y1="248" x2="260" y2="250" stroke="#ffb3c1" stroke-width="1.5" stroke-linecap="round" />
+
+                <!-- === ÉTINCELLES décoratives === -->
+                <g transform="translate(130, 75)">
+                    <path d="M 0 -12 L 2.5 -2.5 L 12 0 L 2.5 2.5 L 0 12 L -2.5 2.5 L -12 0 L -2.5 -2.5 Z" fill="#ff4d6d"
+                        opacity="0.5" />
+                </g>
+                <g transform="translate(310, 290)">
+                    <path d="M 0 -8 L 1.8 -1.8 L 8 0 L 1.8 1.8 L 0 8 L -1.8 1.8 L -8 0 L -1.8 -1.8 Z" fill="#ff758f"
+                        opacity="0.45" />
+                </g>
+
+                <!-- Petits points décoratifs -->
+                <circle cx="75" cy="200" r="3" fill="#ff8fa3" opacity="0.4" />
+                <circle cx="325" cy="195" r="3" fill="#ff8fa3" opacity="0.4" />
+                <circle cx="200" cy="340" r="3.5" fill="#ffb3c1" opacity="0.5" />
+            </svg>
+        </div>
+
+    </div>
+
+
 
     <!-- <img src="7TLV5464.JPG"alt="photo de machin" class="profile_photo"> -->
 

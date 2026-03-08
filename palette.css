@@ -1,0 +1,91 @@
+/* ============================================================
+   PALETTE COMMUNE (à importer sur toutes les pages)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --night-bordeaux:   #590d22;
+  --dark-amaranth:    #800f2f;
+  --cherry-rose:      #a4133c;
+  --rosewood:         #c9184a;
+  --bubblegum-pink:   #ff4d6d;
+  --bubblegum-pink-2: #ff758f;
+  --cotton-candy:     #ff8fa3;
+  --cherry-blossom:   #ffb3c1;
+  --pastel-pink:      #ffccd5;
+  --lavender-blush:   #fff0f3;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--lavender-blush);
+  color: var(--night-bordeaux);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   NAVBAR (commune)
+   ============================================================ */
+.navbar {
+  background-color: var(--night-bordeaux) !important;
+  border-bottom: 2px solid var(--rosewood);
+  box-shadow: 0 2px 12px rgba(89, 13, 34, 0.4);
+}
+
+.navbar-brand {
+  color: var(--lavender-blush) !important;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.navbar-brand:hover {
+  color: var(--cherry-blossom) !important;
+}
+
+.navbar .nav-link {
+  color: var(--cherry-blossom) !important;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 4px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.show {
+  color: var(--lavender-blush) !important;
+  background-color: var(--dark-amaranth);
+}
+
+.dropdown-menu {
+  background-color: var(--dark-amaranth) !important;
+  border: 1px solid var(--cherry-rose);
+  box-shadow: 0 4px 16px rgba(89, 13, 34, 0.35);
+}
+
+.dropdown-item {
+  color: var(--cherry-blossom) !important;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--cherry-rose) !important;
+  color: var(--lavender-blush) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--cotton-candy) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(80%) sepia(20%) saturate(500%) hue-rotate(300deg);
+}

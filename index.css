@@ -1,50 +1,306 @@
 
-.ligne_titre{
-    margin-bottom: 80px;
+
+/* ============================================================
+   index.css — Page d'accueil Pierre Del Castillo
+   Requiert palette.css
+   ============================================================ */
+
+/* ============================================================
+   PALETTE (gardé ici pour compatibilité)
+   ============================================================ */
+:root {
+  --night-bordeaux:   #590d22;
+  --dark-amaranth:    #800f2f;
+  --cherry-rose:      #a4133c;
+  --rosewood:         #c9184a;
+  --bubblegum-pink:   #ff4d6d;
+  --bubblegum-pink-2: #ff758f;
+  --cotton-candy:     #ff8fa3;
+  --cherry-blossom:   #ffb3c1;
+  --pastel-pink:      #ffccd5;
+  --lavender-blush:   #fff0f3;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', Arial, sans-serif;
 }
 
-.ligne_td{
-    margin-bottom: 50px;
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.ligne_de{
-    margin-bottom: 50px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  overflow: auto;
+  background-color: var(--lavender-blush);
+  color: var(--night-bordeaux);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
-.perso_titre{
-    margin-top: 50px;
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+  background-color: var(--night-bordeaux) !important;
+  border-bottom: 2px solid var(--rosewood);
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(89, 13, 34, 0.4);
+}
+
+.navbar-brand {
+  color: var(--lavender-blush) !important;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+
+.navbar-brand:hover {
+  color: var(--cherry-blossom) !important;
+}
+
+/* Liens de navigation */
+.navbar .nav-link {
+  color: var(--cherry-blossom) !important;
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--lavender-blush) !important;
+  background-color: var(--dark-amaranth);
+}
+
+.navbar .nav-link.show {
+  color: var(--lavender-blush) !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: var(--dark-amaranth) !important;
+  border: 1px solid var(--cherry-rose);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(89, 13, 34, 0.35);
+  padding: 0.4rem 0;
+}
+
+.dropdown-item {
+  color: var(--cherry-blossom) !important;
+  font-family: var(--font-body);
+  padding: 0.5rem 1.2rem;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--cherry-rose) !important;
+  color: var(--lavender-blush) !important;
+}
+
+/* Bouton hamburger */
+.navbar-toggler {
+  border-color: var(--cotton-candy) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(80%) sepia(20%) saturate(500%) hue-rotate(300deg);
+}
+
+/* ============================================================
+   PHOTO DE PROFIL (navbar)
+   ============================================================ */
+.profile_photo {
+  /* width: 44px; */
+  /* height: 44px; */
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--rosewood);
+  margin-right: 0.75rem;
+  box-shadow: 0 0 0 3px var(--cherry-blossom);
+  transition: box-shadow 0.2s;
+}
+
+.profile_photo:hover {
+  box-shadow: 0 0 0 3px var(--bubblegum-pink);
+}
+
+/* ============================================================
+   SECTION HERO (texte + carousel)
+   ============================================================ */
+.hero-details {
+  max-width: 380px;
+  margin-right: 15rem;
+  animation: fadeInLeft 0.7s ease both;
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.hero-details .title {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--dark-amaranth);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-details .subtitle {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--rosewood);
+  margin-bottom: 1rem;
+}
+
+.hero-details .description {
+  font-size: 0.97rem;
+  color: var(--cherry-rose);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   LOGO
+   ============================================================ */
+/* #carouselExampleFade {
+  max-width: 340px;
+  width: 100%;
+  background-color: var(--pastel-pink);
+  border: 1px solid var(--cherry-blossom);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 24px rgba(201, 24, 74, 0.12);
+  animation: fadeInRight 0.7s ease both;
+} */
+
+#carouselExampleFade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInRight 0.7s ease both;
+}
+
+#carouselExampleFade svg {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 
-.color{
-    background-color: black;
-    border: black;
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+/* @media (max-width: 768px) {
+  .d-flex.align-items-center {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-details {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero-details .title {
+    font-size: 2rem;
+  }
+
+  #carouselExampleFade {
+    max-width: 100%;
+  }
+
+} */
+
+/* Tablette */
+@media (max-width: 992px) {
+  .hero-details {
+    max-width: 320px;
+    margin-right: 2rem;
+  }
+
+  .hero-details .title {
+    font-size: 2.2rem;
+  }
+
+  #carouselExampleFade svg {
+    width: 240px;
+    height: 240px;
+  }
 }
 
-.color:hover{
-    background-color: white;
-    color:black
+/* Mobile */
+@media (max-width: 768px) {
+  /* Hero : empile verticalement */
+  .d-flex.align-items-center.justify-content-center {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem !important;
+    min-height: auto !important;
+    margin-top: 2rem !important;
+  }
+
+  .hero-details {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero-details .title {
+    font-size: 1.9rem;
+  }
+
+  .hero-details .subtitle {
+    font-size: 1rem;
+  }
+
+  #carouselExampleFade svg {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-.profile_photo{
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
+/* Très petit écran */
+@media (max-width: 400px) {
+  .hero-details .title {
+    font-size: 1.6rem;
+  }
+
+  #carouselExampleFade svg {
+    width: 160px;
+    height: 160px;
+  }
 }
 
-.dropdown-item:active{
-    background-color: black ;
-}
 
-/* taille des cards */
-.taille-card {
-    width: 260px;
-    margin: auto;
-    
-}
+
+
 
 
