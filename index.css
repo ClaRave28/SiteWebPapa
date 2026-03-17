@@ -218,26 +218,7 @@ body {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
-/* @media (max-width: 768px) {
-  .d-flex.align-items-center {
-    flex-direction: column;
-    gap: 2rem;
-  }
 
-  .hero-details {
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .hero-details .title {
-    font-size: 2rem;
-  }
-
-  #carouselExampleFade {
-    max-width: 100%;
-  }
-
-} */
 
 /* Tablette */
 @media (max-width: 992px) {
