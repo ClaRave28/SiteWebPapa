@@ -104,3 +104,15 @@
   border-color: var(--rosewood);
   color: var(--lavender-blush) !important;
 }
+
+.header-card {
+  height: 150px;
+  background: linear-gradient(135deg, var(--night-bordeaux), var(--rosewood));
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.header-card i {
+  font-size: 3rem;
+  color: var(--cherry-rose);
+}
