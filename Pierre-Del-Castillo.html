@@ -25,15 +25,21 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            
-            <img src="7TLV5464r.JPG" alt="photo de machin" class="profile_photo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="Pierre-Del-Castillo.html">Pierre Del Castillo</a>
 
             
+
+
+            <button class="navbar-toggler d-lg-none ms-auto " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand-2" href="Pierre-Del-Castillo.html">Pierre Del Castillo</a>
+            <img src="7TLV5464r.JPG" alt="photo de machin" class="profile_photo">
+           
+
+            
+
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
 
@@ -78,7 +84,27 @@
 
                 </ul>
             </div>
-        </div>
+
+
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Enseignement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Superieur.html">Supérieur</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </nav>
 
     <!-- <div class="d-flex align-items-center justify-content-center p-3 ps-5 mt-5"> -->
