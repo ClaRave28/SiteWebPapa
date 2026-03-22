@@ -178,6 +178,26 @@ body {
   color: var(--lavender-blush) !important;
 }
 
+.offcanvas {
+  background-color: var(--night-bordeaux) !important;
+  border-left: 2px solid var(--rosewood);
+}
+
+.offcanvas-title {
+  color: var(--lavender-blush);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.offcanvas.offcanvas-end {
+  width: 60vw !important;
+  max-width: 240px;
+}
+
 /* Dropdown */
 .dropdown-menu {
   background-color: var(--dark-amaranth) !important;
