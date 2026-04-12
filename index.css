@@ -381,6 +381,198 @@ body {
 }
 
 /* =====================================
+toggle
+===================================== */
+
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  margin: 0 auto; /* ← ajouter */
+  width: fit-content; /* ← ajouter */
+}
+
+.switch-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--night-bordeaux);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.switch-label.active {
+  color: var(--cherry-rose);
+}
+
+.toggle-track {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--pastel-pink);
+  border: 1.5px solid var(--cherry-blossom);
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+  flex-shrink: 0;
+}
+
+.toggle-track.dark {
+  background: var(--dark-amaranth);
+  border-color: var(--night-bordeaux);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--cherry-rose);
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1), background 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-track.dark .toggle-thumb {
+  transform: translateX(28px);
+  background: var(--cherry-blossom);
+}
+
+.sun-icon, .moon-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  transition: opacity 0.2s;
+}
+
+.sun-icon { opacity: 1; }
+.moon-icon { opacity: 0; }
+
+.toggle-track.dark .sun-icon { opacity: 0; }
+.toggle-track.dark .moon-icon { opacity: 1; }
+
+/* couleurs du dark mode */
+
+.dark-mode {
+  --night-bordeaux:   #ffccd5;   /* textes principaux → rose très clair */
+  --dark-amaranth:    #ffb3c1;   /* textes secondaires */
+  --cherry-rose:      #ff758f;   /* accents, liens actifs */
+  --rosewood:         #ff4d6d;   /* hover */
+  --bubblegum-pink:   #c9184a;   /* éléments interactifs */
+  --bubblegum-pink-2: #a4133c;   /* bordures, séparateurs */
+  --cotton-candy:     #ff8fa3;   /* badges, highlights */
+  --cherry-blossom:   #800f2f;   /* surfaces légèrement élevées */
+  --pastel-pink:      #3d0a18;   /* surfaces (cards, navbar) */
+  --lavender-blush:   #1a0509;   /* fond principal */
+}
+
+.dark-mode .navbar {
+  background-color: #3d0a18 !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  color: #ffccd5 !important;
+}
+
+.dark-mode .offcanvas .nav-link.dropdown-toggle.show {
+    color: #000 !important;
+}
+
+
+.dark-mode .navbar-toggler {
+  border-color: #ff758f !important;
+}
+
+.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.dark-mode svg circle[fill="url(#bgGrad)"] {
+  fill: #3d0a18;
+}
+
+.dark-mode .offcanvas {
+  background-color: #3d0a18 !important;
+  color: #ffccd5 !important;
+}
+
+.dark-mode .offcanvas-title {
+  color: #ffccd5 !important;
+}
+
+.dark-mode .offcanvas .nav-link {
+  color: #ffccd5 !important;
+}
+
+ .dark-mode .offcanvas .nav-link:hover {
+  background-color:#800f2f !important ;
+  color:black !important;
+} 
+
+.dark-mode .offcanvas .dropdown-menu {
+  background-color: #590d22 !important;
+  border-color: #ff758f !important;
+} 
+
+
+/* .dark-mode .offcanvas .dropdown-item {
+  color: #800f2f !important;
+  
+}   */
+
+.dark-mode .offcanvas .dropdown-item {
+  color: #ffccd5 !important;
+  
+}  
+
+/* .dark-mode .offcanvas .dropdown-item:hover {
+  background-color: #800f2f !important;
+  color: black !important;
+} */
+
+.dark-mode .offcanvas .dropdown-item:hover {
+  background-color: #800f2f !important;
+  color: #ffccd5 !important;
+}
+
+.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+.dark-mode .header-card {
+  background: linear-gradient(135deg, #3d0a18, #800f2f);
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #3d0a18 !important;
+  color:#1a0509;
+}
+
+.dark-mode .dropdown-menu .dropdown-item {
+  color: #ffccd5 !important;
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover {
+  background-color: #800f2f !important;
+  color: #ffccd5 !important;
+}
+
+.dark-mode .dropdown-item:hover {
+  background-color: #590d22 !important;
+}
+
+.dark-mode .nav-link:hover {
+  background-color: #800f2f !important;
+  color: black !important;
+}
+
+
+/* =====================================
 Responsive
 ===================================== */
 
@@ -440,7 +632,6 @@ Responsive
     height: 160px;
   }
 }
-
 
 
 

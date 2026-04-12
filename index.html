@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr" data-bs-theme="dark">
+<html lang="fr">
 
 <head>
+  
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/index.css">
-
+    
 
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     
 
 
     <title>Pierre Del Castillo</title>
+
+    
 </head>
 
-<body class=page-principale>
+<body class="page-principale">
 
 
     <!-- navbar -->
@@ -86,14 +92,14 @@
                 </ul>
             </div>
 
-
+            <!-- menu -->
             <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNav">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-flex flex-column h-100">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -103,9 +109,103 @@
                                 <li><a class="dropdown-item" href="Superieur.html">Supérieur</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item mt-auto pt-3" style="border-top: 1px solid var(--cherry-rose);">
+                            <a href="paramètres.html" class="nav-link d-flex align-items-center gap-2">
+                                <svg width="24" height="24" viewBox="-15 0 115 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- ... même contenu SVG mais sans le <a> wrapper ... -->
+                                    <g transform="translate(40, 46)">
+                                        <g class="gear-body">
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" />
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(30)" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(30)" />
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(60)" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(60)" />
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(90)" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(90)" />
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3"
+                                                transform="rotate(120)" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(120)" />
+                                            <rect x="-8" y="-52" width="16" height="18" rx="3"
+                                                transform="rotate(150)" />
+                                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(150)" />
+                                            <circle r="40" />
+                                        </g>
+                                        <circle r="14" fill="var(--lavender-blush)" />
+                                        <circle r="9" fill="var(--cherry-rose)" class="gear-body" />
+                                    </g>
+                                </svg>
+                                Paramètres
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
+
+
+            <!-- image engrenage svg -->
+
+            <svg class="d-none d-lg-block" width="35" height="55" viewBox="-15 0 115 100"
+                xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .gear-btn {
+                        cursor: pointer;
+                    }
+
+                    .gear-btn:hover .gear-body {
+                        fill: var(--rosewood);
+                    }
+
+                    .gear-btn:active .gear-body {
+                        fill: var(--dark-amaranth);
+                    }
+
+                    .gear-body {
+                        fill: var(--cherry-rose);
+                        transition: fill 0.15s;
+                    }
+
+                    .gear-label {
+                        font-family: var(--font-body);
+                        font-size: 13px;
+                        font-weight: 500;
+                        fill: var(--night-bordeaux);
+                    }
+                </style>
+
+                <a href="paramètres.html">
+                    <g class="gear-btn" transform="translate(40, 46)">
+
+                        <!-- 12 dents (6 paires, rotation 0°/30°/60°/90°/120°/150°) -->
+                        <g class="gear-body">
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" />
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(30)" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(30)" />
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(60)" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(60)" />
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(90)" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(90)" />
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(120)" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(120)" />
+                            <rect x="-8" y="-52" width="16" height="18" rx="3" transform="rotate(150)" />
+                            <rect x="-8" y="34" width="16" height="18" rx="3" transform="rotate(150)" />
+
+                            <!-- Corps principal -->
+                            <circle r="40" />
+                        </g>
+
+                        <!-- Trou central -->
+                        <circle r="14" fill="var(--lavender-blush)" />
+                        <circle r="9" fill="var(--cherry-rose)" class="gear-body" />
+
+                        <!-- Label -->
+                        <!-- <text class="gear-label" text-anchor="middle" y="72">Paramètres</text> -->
+                    </g>
+                </a>
+            </svg>
     </nav>
 
     <!-- <div class="d-flex align-items-center justify-content-center p-3 ps-5 mt-5"> -->
@@ -247,6 +347,8 @@
                         <a href="#">Romans et lettres  </a>
                     </li>
                 </ul> -->
+
+<script src="toggle.js"></script>  
 
 </body>
 
