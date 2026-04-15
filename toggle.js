@@ -1,6 +1,8 @@
-// Applique le thème immédiatement (avant le DOM)
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-mode');
+// Applique immédiatement le thème sauvegardé avant le chargement complet du DOM
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark') {
+  document.documentElement.classList.add('dark-mode');
 }
 
 let isDark = localStorage.getItem('theme') === 'dark';
