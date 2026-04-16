@@ -44,3 +44,6 @@ function update() {
     localStorage.setItem('theme', 'light');
   }
 }
+
+// Au chargement, applique le thème sauvegardé
+update();
