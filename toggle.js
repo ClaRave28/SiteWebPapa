@@ -1,13 +1,19 @@
 // Applique le thème immédiatement (avant le DOM)
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-mode');
+function getTheme() {
+  return localStorage.getItem('theme') === 'dark';
 }
 
-let isDark = localStorage.getItem('theme') === 'dark';
+let isDark = getTheme();
 
 document.addEventListener('DOMContentLoaded', () => {
+  isDark = getTheme(); // 🔥 important : relecture au chargement
   update();
 });
+
+function applyTheme() {
+  document.documentElement.classList.toggle('dark-mode', isDark);
+  document.body.classList.toggle('dark-mode', isDark);
+}
 
 function toggle() {
   isDark = !isDark;

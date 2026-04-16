@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr">
 
 <head>
-  
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
 
@@ -13,7 +18,7 @@
     <link rel="stylesheet" href="/index.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 
 
     <title>Analyse fonctionnelle</title>
@@ -27,7 +32,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="Afonctionnelle_M1.html">Analyse fonctionnelle &bull; M1</a>
-            
+
 
         </div>
     </nav>
@@ -45,11 +50,12 @@
 
             <div class="card h-100 d-flex flex-column taille-card">
                 <div class="header-card d-flex justify-content-center align-items-center">
-                    <span style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">Cours</span>
+                    <span
+                        style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">Cours</span>
                 </div>
 
                 <div class="card-body d-flex flex-column">
-                    
+
                     <p class="card-text">
 
                         En maintenance
@@ -67,23 +73,24 @@
 
         <hr class="ligne_td">
         <div class="row justify-content-center g-3"></div>
-        
-
-        
 
 
 
-        
+
+
+
+
 
         <div class="col-auto">
 
             <div class="card h-100 d-flex flex-column taille-card">
                 <div class="header-card d-flex justify-content-center align-items-center">
-                    <span style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">2024-2025</span>
+                    <span
+                        style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">2024-2025</span>
                 </div>
 
                 <div class="card-body d-flex flex-column">
-                    
+
                     <p class="card-text">
                         <a href="/tdanalysefonctionnelleannee20242025/TD2-1.pdf" target="_blank" class="pdf-button">TD
                             2</a>
@@ -126,21 +133,22 @@
 
         <hr class="ligne_de">
 
-        
 
-        
 
-        
+
+
+
 
         <div class="col-auto">
 
             <div class="card h-100 d-flex flex-column taille-card">
                 <div class="header-card d-flex justify-content-center align-items-center">
-                    <span style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">2024-2025</span>
+                    <span
+                        style="font-size: 1.5rem; font-weight: bold; font-family: var(--font-display); color:var(--night-bordeaux);">2024-2025</span>
                 </div>
 
                 <div class="card-body d-flex flex-column">
-                   
+
                     <p class="card-text">
                         <a href="/tdanalysefonctionnelleannee20242025/DM1.pdf" target="_blank"
                             class="pdf-button">DM1</a>
@@ -151,21 +159,21 @@
                         <a href="/tdanalysefonctionnelleannee20242025/examen2025.pdf" target="_blank"
                             class="pdf-button">Examen</a>
                     </p>
-<!-- bouton correction -->
+                    <!-- bouton correction -->
                     <p class="d-flex justify-content-center"">
 
-                        <button class="btn btn-primary color" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#devm1" aria-expanded="false" aria-controls="collapseExample">
-                            Correction
+                        <button class=" btn btn-primary color" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#devm1" aria-expanded="false" aria-controls="collapseExample">
+                        Correction
                         </button>
                     </p>
                     <div class="collapse" id="devm1">
                         <div class="card card-body">
                             <a href="/tdanalysefonctionnelleannee20242025/correctionDM1.pdf"
-                        class="pdf-button">Correction DM1</a>
-                    <a href="/tdanalysefonctionnelleannee20242025/correctionDM2.pdf"
-                        class="pdf-button">Correction DM2</a>
-                            
+                                class="pdf-button">Correction DM1</a>
+                            <a href="/tdanalysefonctionnelleannee20242025/correctionDM2.pdf"
+                                class="pdf-button">Correction DM2</a>
+
                         </div>
                     </div>
 
@@ -174,7 +182,7 @@
 
 
 
-                    
+
                 </div>
             </div>
 
@@ -185,7 +193,7 @@
 
     </br>
 
-<script src="/toggle.js"></script>  
+    <script src="/toggle.js" defer></script>
 
 </body>
 

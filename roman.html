@@ -1,49 +1,55 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-  
-        <meta charset="UTF-8">
-        <title>Roman&lettres</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="img/11277068.png">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    
-    
-    
-    </head>
-    <body>
 
-        <h2><u>Roman</u></h2> 
+<head>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
 
-        <div class="card-grid-1">                
-                
-            <button class="card1" onclick="window.open('page recherches.html')">
-                Recherches 
-            </button>	
-
-            <button class="card2" onclick="window.open('page recherches.html')">
-                Recherches 
-            </button>
-
-            <button class="card3" onclick="window.open('page recherches.html')">
-                Recherches 
-            </button>
-
-            
+    <meta charset="UTF-8">
+    <title>Roman&lettres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/11277068.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
-        </div>
 
-        <hr class="styled-line1"/>
+</head>
+
+<body>
+
+    <h2><u>Roman</u></h2>
+
+    <div class="card-grid-1">
+
+        <button class="card1" onclick="window.open('page recherches.html')">
+            Recherches
+        </button>
+
+        <button class="card2" onclick="window.open('page recherches.html')">
+            Recherches
+        </button>
+
+        <button class="card3" onclick="window.open('page recherches.html')">
+            Recherches
+        </button>
 
 
-        <div class="content">  
 
-        </div>
- 
-    <script src="/toggle.js"></script>  
+
+    </div>
+
+    <hr class="styled-line1" />
+
+
+    <div class="content">
+
+    </div>
+
+    <script src="/toggle.js" defer></script>
 
 </body>
 
-    </html>
+</html>
