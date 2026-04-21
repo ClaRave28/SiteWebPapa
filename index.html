@@ -349,7 +349,14 @@
                     </li>
                 </ul> -->
 
-
+    <script>
+        window.addEventListener('storage', () => {
+            document.documentElement.classList.toggle(
+                'dark-mode',
+                localStorage.getItem('theme') === 'dark'
+            );
+        });
+    </script>
 
 </body>
 
