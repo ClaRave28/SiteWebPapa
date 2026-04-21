@@ -67,7 +67,46 @@
     </div>
 
 
-    <script src="toggle.js" defer></script>
+    <script>
+    function isDarkMode() {
+        return localStorage.getItem('theme') === 'dark';
+    }
+
+    function updateTheme() {
+        const isDark = isDarkMode();
+
+        const track = document.getElementById('track');
+        const labelDark = document.getElementById('label-dark');
+        const labelLight = document.getElementById('label-light');
+
+        document.documentElement.classList.toggle('dark-mode', isDark);
+
+        if (track) {
+            track.classList.toggle('dark', isDark);
+        }
+
+        if (labelDark) {
+            labelDark.classList.toggle('active', isDark);
+        }
+
+        if (labelLight) {
+            labelLight.classList.toggle('active', !isDark);
+        }
+    }
+
+    function toggle() {
+        const newTheme = isDarkMode() ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        updateTheme();
+    }
+
+    function setMode(mode) {
+        localStorage.setItem('theme', mode);
+        updateTheme();
+    }
+
+    document.addEventListener('DOMContentLoaded', updateTheme);
+</script>
 
 </body>
 
