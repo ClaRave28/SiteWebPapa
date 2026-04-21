@@ -484,7 +484,7 @@ toggle
 
 /* couleurs du dark mode */
 
-html.dark-mode {
+html.dark-mode body {
   --night-bordeaux: #ffccd5;
   /* textes principaux → rose très clair */
   --dark-amaranth: #ffb3c1;
@@ -507,103 +507,103 @@ html.dark-mode {
   /* fond principal */
 }
 
-html.dark-mode .navbar {
+html.dark-mode body .navbar {
   background-color: #3d0a18 !important;
 }
 
-html.dark-mode .navbar-brand,
-html.dark-mode .nav-link {
+html.dark-mode body .navbar-brand,
+html.dark-mode body .nav-link {
   color: #ffccd5 !important;
 }
 
-html.dark-mode .offcanvas .nav-link.dropdown-toggle.show {
+html.dark-mode body .offcanvas .nav-link.dropdown-toggle.show {
   color: #000 !important;
 }
 
 
-html.dark-mode .navbar-toggler {
+html.dark-mode body .navbar-toggler {
   border-color: #ff758f !important;
 }
 
-html.dark-mode .navbar-toggler-icon {
+html.dark-mode body .navbar-toggler-icon {
   filter: invert(1);
 }
 
-html.dark-mode svg circle[fill="url(#bgGrad)"] {
+html.dark-mode body svg circle[fill="url(#bgGrad)"] {
   fill: #3d0a18;
 }
 
-html.dark-mode .offcanvas {
+html.dark-mode body .offcanvas {
   background-color: #3d0a18 !important;
   color: #ffccd5 !important;
 }
 
-html.dark-mode .offcanvas-title {
+html.dark-mode body .offcanvas-title {
   color: #ffccd5 !important;
 }
 
-html.dark-mode .offcanvas .nav-link {
+html.dark-mode body .offcanvas .nav-link {
   color: #ffccd5 !important;
 }
 
-html.dark-mode .offcanvas .nav-link:hover {
+html.dark-mode body .offcanvas .nav-link:hover {
   background-color: #800f2f !important;
   color: black !important;
 }
 
-html.dark-mode .offcanvas .dropdown-menu {
+html.dark-mode body .offcanvas .dropdown-menu {
   background-color: #590d22 !important;
   border-color: #ff758f !important;
 }
 
 
-/* html.dark-mode .offcanvas .dropdown-item {
+/* html.dark-mode body .offcanvas .dropdown-item {
   color: #800f2f !important;
   
 }   */
 
-html.dark-mode .offcanvas .dropdown-item {
+html.dark-mode body .offcanvas .dropdown-item {
   color: #ffccd5 !important;
 
 }
 
-/* html.dark-mode .offcanvas .dropdown-item:hover {
+/* html.dark-mode body .offcanvas .dropdown-item:hover {
   background-color: #800f2f !important;
   color: black !important;
 } */
 
-html.dark-mode .offcanvas .dropdown-item:hover {
+html.dark-mode body .offcanvas .dropdown-item:hover {
   background-color: #800f2f !important;
   color: #ffccd5 !important;
 }
 
-html.dark-mode .btn-close {
+html.dark-mode body .btn-close {
   filter: invert(1);
 }
 
-html.dark-mode .header-card {
+html.dark-mode body .header-card {
   background: linear-gradient(135deg, #3d0a18, #800f2f);
 }
 
-html.dark-mode .dropdown-menu {
+html.dark-mode body .dropdown-menu {
   background-color: #3d0a18 !important;
   color: #1a0509;
 }
 
-html.dark-mode .dropdown-menu .dropdown-item {
+html.dark-mode body .dropdown-menu .dropdown-item {
   color: #ffccd5 !important;
 }
 
-html.dark-mode .dropdown-menu .dropdown-item:hover {
+html.dark-mode body .dropdown-menu .dropdown-item:hover {
   background-color: #800f2f !important;
   color: #ffccd5 !important;
 }
 
-html.dark-mode .dropdown-item:hover {
+html.dark-mode body .dropdown-item:hover {
   background-color: #590d22 !important;
 }
 
-html.dark-mode .nav-link:hover {
+html.dark-mode body .nav-link:hover {
   background-color: #800f2f !important;
   color: black !important;
 }
