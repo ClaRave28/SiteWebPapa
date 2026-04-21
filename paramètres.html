@@ -3,9 +3,10 @@
 
 <head>
     <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark-mode');
-        }
+        (function () {
+            const isDark = localStorage.getItem('theme') === 'dark';
+            document.documentElement.classList.toggle('dark-mode', isDark);
+        })();
     </script>
 
     <meta charset="UTF-8">
@@ -68,45 +69,45 @@
 
 
     <script>
-    function isDarkMode() {
-        return localStorage.getItem('theme') === 'dark';
-    }
-
-    function updateTheme() {
-        const isDark = isDarkMode();
-
-        const track = document.getElementById('track');
-        const labelDark = document.getElementById('label-dark');
-        const labelLight = document.getElementById('label-light');
-
-        document.documentElement.classList.toggle('dark-mode', isDark);
-
-        if (track) {
-            track.classList.toggle('dark', isDark);
+        function isDarkMode() {
+            return localStorage.getItem('theme') === 'dark';
         }
 
-        if (labelDark) {
-            labelDark.classList.toggle('active', isDark);
+        function updateTheme() {
+            const isDark = isDarkMode();
+
+            const track = document.getElementById('track');
+            const labelDark = document.getElementById('label-dark');
+            const labelLight = document.getElementById('label-light');
+
+            document.documentElement.classList.toggle('dark-mode', isDark);
+
+            if (track) {
+                track.classList.toggle('dark', isDark);
+            }
+
+            if (labelDark) {
+                labelDark.classList.toggle('active', isDark);
+            }
+
+            if (labelLight) {
+                labelLight.classList.toggle('active', !isDark);
+            }
         }
 
-        if (labelLight) {
-            labelLight.classList.toggle('active', !isDark);
+        function toggle() {
+            const newTheme = isDarkMode() ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            updateTheme();
         }
-    }
 
-    function toggle() {
-        const newTheme = isDarkMode() ? 'light' : 'dark';
-        localStorage.setItem('theme', newTheme);
-        updateTheme();
-    }
+        function setMode(mode) {
+            localStorage.setItem('theme', mode);
+            updateTheme();
+        }
 
-    function setMode(mode) {
-        localStorage.setItem('theme', mode);
-        updateTheme();
-    }
-
-    document.addEventListener('DOMContentLoaded', updateTheme);
-</script>
+        document.addEventListener('DOMContentLoaded', updateTheme);
+    </script>
 
 </body>
 
