@@ -1,4 +1,4 @@
-# SiteWebPapa
+# website for Pierre Del Castillo
 
 ## Table of contents
 1. [Introduction](#1-introduction)
@@ -78,7 +78,7 @@ The site is deployed via GitHub Actions and available at:
 
 ---
 
-# SiteWebPapa
+# Site web pour Pierre Del Castillo
 
 ## Table des matières
 1. [Introduction](#1-introduction)
